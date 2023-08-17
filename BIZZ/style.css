@@ -1,0 +1,149 @@
+* {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #81b8d8;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+/*********************************NAV BAR**************************/
+nav {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: 300px;
+}
+/***********Partie gauche : a propos*************/
+.nav-left {
+  width: 100%;
+  height: auto;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/***********Partie right : regles du jeu*************/
+.nav-right {
+  width: 100%;
+  height: auto;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*******A propos********/
+.nav-left button,
+.nav-right button {
+  background: #c29e5b;
+  outline: 4px solid #ffffff;
+  border-style: none;
+  width: 60%;
+  height: 25%;
+}
+.nav-left button p,
+.nav-right button p {
+  font-weight: 900;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  color: white;
+}
+/******************partie pointe du bouton******/
+.pointe{
+  clip-path: polygon(100% 0, 75% 29%, 100% 100%);
+  background-color: #c29e5b;
+  height: 200px;
+  width: 200px;
+  border: 4Px solid #ffffff
+}
+.pointe div{
+    
+}
+
+
+/***********Partie centre : Logo bizz*************/
+.nav-center {
+  width: 100%;
+  height: auto;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbtn {
+  padding: 0;
+  margin-top: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23vw;
+  height: 70px;
+  background: #c29e5b;
+  outline: 4px solid #ffffff;
+  border-style: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 9px #000000;
+  cursor: pointer;
+  color: #ffffff;
+}
+.navbtntext {
+  font-family: "Jost";
+  font-style: italic;
+  font-weight: 900;
+  font-size: 35px;
+  letter-spacing: 8px;
+}
+
+.div-carte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.cartebtn {
+  padding: 0;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26vw;
+  height: 70px;
+  background: #c29e5b;
+  outline: 3px solid #ffffff;
+  border-style: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.cartebtn:hover {
+  transform: scale(1.1);
+  outline: 4px solid #c29e5b;
+  background: white;
+  color: #c29e5b;
+  font-size: 37px;
+  letter-spacing: 11px;
+}
+.cartebtntext {
+  font-family: "Jost";
+  font-style: italic;
+  font-weight: 900;
+  font-size: 35px;
+  letter-spacing: 0.23em;
+  color: #ffffff;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+}
+section {
+  display: flex;
+  justify-content: space-around;
+}
+.carte img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
