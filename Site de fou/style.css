@@ -1,0 +1,137 @@
+/* bleu foncé 2B2D42
+ gris foncé 8D99AE
+ gris clair EDF2F4
+ rouge EF233C
+ rouge foncé D90429 */
+
+@font-face {
+  font-family: "Batangas";
+  src: url("BatangasBold700.otf") format("opentype");
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Batangas";
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #edf2f4;
+}
+header {
+  height: 100px;
+  background-color: #2b2d42;
+}
+nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+nav img {
+  margin-left: 5%;
+  height: 75px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+nav ul li a {
+  color: white;
+  font-size: 1.2em;
+  width: 70px;
+  text-align: center;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+nav ul li:nth-child(1) {
+  background-color: #8d99ae;
+}
+nav ul li:nth-child(2) {
+  background-color: #d90429;
+}
+
+nav ul li:nth-child(1):hover {
+  background-color: #ef233c;
+}
+
+/***********Section****/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.select-game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  background-color: #2b2d42;
+  height: 50px;
+  width: 80%;
+  border-radius: 15px;
+}
+
+.select-game img {
+  padding-left: 5%;
+  padding-top: 3%;
+  height: 30px;
+}
+h2 {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+
+.modal-select-game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 200px;
+    background-color: #d90429;
+    border-radius: 15px;
+    margin-top: 1%;
+}
+.modal-select-game ul{
+    width: 100%;
+    height: 100%;
+
+}
+.modal-select-game ul li{
+    height: 25%;
+    width: 100%;
+    border-bottom: solid 2px #2b2d42;
+}
+
+.modal-select-game ul li a{
+    color: white;
+}
+
+footer{
+    height: 130px;
+    width: 100vw;
+    background-color: #2b2d42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+.right-logo{
+    
+}
+.right-logo img{
+    height: 50Px;
+    padding-right: 5%;
+}
