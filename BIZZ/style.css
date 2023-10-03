@@ -1,5 +1,15 @@
+/*https://coolors.co/1f8321-97978b-81b8d8-c4deec-c1a05a*/
+/*https://www.flaticon.com/free-icon/weed_5433954?term=weed&page=1&position=2&origin=search&related_id=5433954*/
+@font-face {
+  font-family: "Patrez";
+  src: url("font/Patrez.otf") format("opentype");
+}
+@font-face {
+  font-family: "TAN";
+  src: url("font/TAN\ Moonlight\ Display.otf") format("opentype");
+}
+
 * {
-  font-family: "Jost", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -8,97 +18,52 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  font-family: 'League Spartan', sans-serif;
 }
 /*********************************NAV BAR**************************/
 nav {
-  display: grid;
-  grid-template-columns: 1fr 0.8fr 1fr;
-  grid-template-rows: 1fr;
-  width: 100%;
-  height: 300px;
-}
-/***********Partie gauche : a propos*************/
-.nav-left {
-  width: 100%;
-  height: auto;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
   display: flex;
-  align-items: center;
   justify-content: center;
+  width: 100vw;
+  height: 150px;
+  margin-top: 3%;
 }
-/***********Partie right : regles du jeu*************/
-.nav-right {
-  width: 100%;
-  height: auto;
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/*******A propos********/
-.nav-left button,
-.nav-right button {
-  background: #c29e5b;
-  outline: 4px solid #ffffff;
-  border-style: none;
-  width: 60%;
-  height: 25%;
-}
-.nav-left button p,
-.nav-right button p {
-  font-weight: 900;
-  font-size: 3em;
-  letter-spacing: 0.1em;
-  color: white;
-}
-/******************partie pointe du bouton******/
-.pointe{
-  clip-path: polygon(100% 0, 75% 29%, 100% 100%);
-  background-color: #c29e5b;
-  height: 200px;
-  width: 200px;
-  border: 4Px solid #ffffff
-}
-.pointe div{
-    
-}
-
-
 /***********Partie centre : Logo bizz*************/
-.nav-center {
-  width: 100%;
-  height: auto;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+nav div img {
+  height: 150px;
 }
-.navbtn {
-  padding: 0;
-  margin-top: 8vh;
+
+
+/**********Section****/
+section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 23vw;
-  height: 70px;
-  background: #c29e5b;
-  outline: 4px solid #ffffff;
-  border-style: none;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 9px #000000;
-  cursor: pointer;
-  color: #ffffff;
+  margin-top: 10%;
 }
-.navbtntext {
-  font-family: "Jost";
-  font-style: italic;
-  font-weight: 900;
-  font-size: 35px;
-  letter-spacing: 8px;
+
+.start{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #76A34F;
+  text-align: center;
+  height: 50px;
+  border-radius: 10px;
 }
+.start h1{
+  color: white;
+  font-size: 2em;
+}
+
+
+
+
+
+
+
 
 .div-carte {
   display: flex;
@@ -138,10 +103,7 @@ nav {
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 2px;
 }
-section {
-  display: flex;
-  justify-content: space-around;
-}
+
 .carte img {
   width: 400px;
   height: 400px;
